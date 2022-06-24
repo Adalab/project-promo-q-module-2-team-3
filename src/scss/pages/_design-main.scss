@@ -29,12 +29,12 @@
     background-color: white;
     width: 240px;
     height: 329px;
+    border-left: solid, violet, 10px;
 }
 .image{
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTil9_c3PpcUTAx2vmHH6srdREmI1X8474m3Q&usqp=CAU");
     width: 240px;
-    height: 200px;
-    
+    height: 200px;  
    
 }
 
@@ -45,18 +45,18 @@
     margin-top: 15px;
    
 }
-.list__elements{
-    
-color:$color-title;
-
-font-size: 18px;
-border: 50px, solid, red;
-width: 32px;
-height: 32px;
+.list__elements{  
+   color:$color-title;
+   font-size: 18px;
+   border: 50%, solid, red;
+   width: 22px;
+   height: 22px;
 }
-.fa-solid rrss{
-    border: 50px, solid, red; 
-    border-radius: 16px;
-  border: solid 2px var(--hospital-green)
+.rrss{
+    border: 5px, solid, red; 
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+  
 
 }
