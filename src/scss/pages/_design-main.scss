@@ -1,3 +1,69 @@
+
+.card{
+    background-color:#bfcdd0 ;
+    height: 457px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card__name{
+    font-size: 18px;
+    font-family: $montserrat;
+    color:$color-title;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+      
+   
+}
+.card__paragraph{
+    font-size: 16px;
+    font-family: $montserrat-bold;
+    color:$color-letter;
+    padding-left: 20px;
+    margin-bottom: 10px;
+   
+}
+.card__container{
+    background-color: white;
+    width: 240px;
+    height: 329px;
+    border-left: solid, violet, 10px;
+}
+.image{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTil9_c3PpcUTAx2vmHH6srdREmI1X8474m3Q&usqp=CAU");
+    width: 240px;
+    height: 200px;  
+   
+}
+
+.list{
+    display: flex;
+    gap:15px;
+    padding-left: 20px;
+    margin-top: 15px;
+   
+}
+.list__elements{  
+   color:$color-title;
+   font-size: 18px;
+   border: 50%, solid, red;
+   width: 22px;
+   height: 22px;
+}
+.rrss{
+    border: 5px, solid, red; 
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+
+}
+
+
+//formulario
+
 .fill{
     display:flex;
     flex-direction: column;
@@ -71,3 +137,4 @@
 .fa-angle-up{
     padding-top: 16px;
 }
+
