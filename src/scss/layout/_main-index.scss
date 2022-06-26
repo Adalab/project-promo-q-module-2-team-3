@@ -49,6 +49,7 @@
         color: $icon-main;
         font-family: $merriweather;
         font-weight: 900;
+        line-height: normal;
         text-align: center;
     }
 
@@ -60,23 +61,23 @@
     }
 
     &__link--div{
-        background-color: $color-button-index;
         margin-top: 2.413rem;
         margin-bottom: 9.38%;
-        width: 129px;
+        display: flex;
+        justify-content: center;
         text-align: center;
         align-items: center
-        border-radius: 3.5%;
     }
 
     &__link--link{
         text-decoration: none;
         color: $color-text-button;
         font-family: $open;
-        font-weight: 600;
         font-size: $size-button;
         text-transform: uppercase;
-        /*falta redondear*/
+        padding: 8% 16%;
+        background-color: $color-button-index;
+        border-radius: 15%; /*la forma no queda exacta*/
     }
 
     &__icon{
