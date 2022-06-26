@@ -1,23 +1,38 @@
+.fa-solid{
+    color: $icon-main;
+    margin: 0;
+    transform: scale(1.5);
+    margin-bottom: 5px;
+}
+
 .main{
+    border-bottom: 1px solid $color-letter-t;
     background-color: $color-bckg;
-    border-bottom: 1px solid $color-letter; /*no coge el color*/
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &__colcen{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 29.69% 10.94% 9.38% 10.94%; /*regla de 3*/
+    margin: 0% 10.94% 9.38% 10.94%; /*regla de 3*/
     }
 
     &__section--img{
         width:250px;
+        margin-top: 29.69%;
+        padding-bottom: 2.213rem;
     }
 
     &__section--wrapper{
         display: flex;
         flex-direction: row;
-        border: 1px solid $icon-main;
+        border: 1.6px solid $icon-main-t;
+        border-radius: 3.5%;
     }
 
     &__section--paragraph{
@@ -26,6 +41,7 @@
         font-family: $open;
         line-height: normal;
         text-align: center;
+        padding-bottom: 1.113rem;
     }
 
     &__section--title{
@@ -44,19 +60,31 @@
     }
 
     &__link--div{
-        background-color: $color-title;
+        background-color: $color-button-index;
+        margin-top: 2.413rem;
+        margin-bottom: 9.38%;
+        width: 129px;
+        text-align: center;
+        align-items: center
+        border-radius: 3.5%;
     }
 
     &__link--link{
         text-decoration: none;
         color: $color-text-button;
         font-family: $open;
+        font-weight: 600;
         font-size: $size-button;
         text-transform: uppercase;
         /*falta redondear*/
     }
+
+    &__icon{
+        margin: 0.938rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.fa-solid{
-    color: $icon-main;
-}
