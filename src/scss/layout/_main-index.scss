@@ -1,13 +1,23 @@
 .main{
     background-color: $color-bckg;
+    border-bottom: 1px solid $color-letter; /*no coge el color*/
+
+    &__colcen{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 29.69% 10.94% 9.38% 10.94%; /*regla de 3*/
+    }
+
+    &__section--img{
+        width:250px;
+    }
 
     &__section--wrapper{
         display: flex;
         flex-direction: row;
+        border: 1px solid $icon-main;
     }
 
     &__section--paragraph{
@@ -42,6 +52,8 @@
         color: $color-text-button;
         font-family: $open;
         font-size: $size-button;
+        text-transform: uppercase;
+        /*falta redondear*/
     }
 }
 
