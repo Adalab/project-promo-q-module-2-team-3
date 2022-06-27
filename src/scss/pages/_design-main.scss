@@ -251,3 +251,46 @@ margin: 13px 10px 28px 0px;}  }
 .hidden{
     display: none;
 }
+
+/*La parte del botón para Twitter*/
+
+.buttontwitter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $color-letter-t;
+    border-bottom: 1px solid $color-letter-t;
+
+    &-button{
+        background-color: $color-button-twitter;
+        color: $color-twitter-text;
+        border: none;
+        border-radius: 5px;
+        width: 11rem;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-family: $open;
+        font-size: $size-med;
+    }
+
+    &-h6{
+        color: $color-letter;
+        font-family: $open;
+        font-size: $size-details;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    &-paragraph{
+        color: $icon-main;
+        font-size: $size-link-final;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+}
+
+.share-in-twitter{
+    color: $color-twitter-text;
+}
