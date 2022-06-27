@@ -1,7 +1,6 @@
 
 .card{
     background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
-    //background-color:#bfcdd0 ;
     height: 457px;
     display: flex;
     justify-content: center;
@@ -55,6 +54,7 @@
    height: 22px;
 }
 .rrss{
+    color:$color-title;
     border: 5px, solid, red; 
     border-radius: 50%;
     width: 22px;
