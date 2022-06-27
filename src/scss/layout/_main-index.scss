@@ -61,15 +61,16 @@
     }
 
     &__link--div{
+        width: 129px;
+        height: 42px;
         margin-top: 2.413rem;
         margin-bottom: 9.38%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center
+       
+        
     }
 
     &__link--link{
+     
         text-decoration: none;
         color: $color-text-button;
         font-family: $open;
@@ -77,7 +78,8 @@
         text-transform: uppercase;
         padding: 8% 16%;
         background-color: $color-button-index;
-        border-radius: 15%; /*la forma no queda exacta*/
+        border-radius: 20px;
+        /*la forma no queda exacta*/
     }
 
     &__icon{
@@ -89,3 +91,9 @@
     }
 }
 
+.prueba{ width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
