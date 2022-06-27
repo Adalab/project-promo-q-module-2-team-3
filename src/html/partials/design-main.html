@@ -28,32 +28,29 @@
 
   <section class="form-section">
     <form class="form" action="#" method="post">
-      <div class="fill"><fieldset class="fill__title"> 
-        <i class="fa-solid fa-object-ungroup design-icon"></i>
-    <span class="fill__title--text">Diseña</span></fieldset> </div>
-    
-    
-    <fieldset class="designe-form">
-     <legend>Colores</legend>
-     <div>
-     <label>
-         <input type="radio" name="color" value="azul"> Azul
-     </label>
-     <label>
-         <input type="radio" name="color" value="negro"> Negro
-     </label>
-     <label>
-         <input type="radio" name="color" value="amarillo"> Amarillo
-     </label></div> 
- </fieldset>
+      <div class="fill">
+        <fieldset class="fill__title">
+          <i class="fa-solid fa-object-ungroup design-icon"></i>
+          <span class="fill__title--text">Diseña</span>
+        </fieldset>
+      </div>
 
-
-
-
+      <fieldset class="designe-form">
+        <legend>Colores</legend>
+        <div>
+          <label> <input type="radio" name="color" value="azul" /> Azul </label>
+          <label>
+            <input type="radio" name="color" value="negro" /> Negro
+          </label>
+          <label>
+            <input type="radio" name="color" value="amarillo" /> Amarillo
+          </label>
+        </div>
+      </fieldset>
 
       <div class="fill">
         <fieldset class="fill__title">
-          <i class="fa-solid fa-keyboard"></i
+          <i class="keyboard fa-solid fa-keyboard"></i
           ><span class="fill__title--text">Rellena</span
           ><i class="fa-solid fa-angle-up"></i>
         </fieldset>
@@ -79,14 +76,12 @@
           >Imagen de perfil</label
         >
         <div class="fillform__image">
-          <button class="fillform__image--button">Añadir imagen</button>
-          <textarea
-            class="fillform__image--square"
-            id="comments"
-            name="comments"
-            rows="1"
-            cols="1"
-          ></textarea>
+          <label class="fillform__image--button" for="image"
+            >Añadir imagen</label
+          >
+          <input class="hidden" type="file" name="image" id="image" />
+
+          <div class="fillform__image--square"></div>
         </div>
         <label class="fillform__label" for="email">Email</label>
         <input
@@ -116,7 +111,18 @@
           placeholder="Ej: @sally-hill"
           type="text"
         />
-        <fieldset>Comparte</fieldset>
+        <div class="share">
+          <fieldset class="share__title">
+            <i class="fa-solid fa-share-nodes share-icon"></i
+            ><span class="fill__title--text">Comparte</span
+            ><i class="share-arrow fa-solid fa-angle-up"></i>
+          </fieldset>
+          <div class="buttondiv">
+            <button class="buttondiv-share">
+              <i class="share-card fa-solid fa-address-card"></i> Crear tarjeta
+            </button>
+          </div>
+        </div>
       </div>
     </form>
   </section>
