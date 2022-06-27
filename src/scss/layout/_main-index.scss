@@ -1,0 +1,91 @@
+.fa-solid{
+    color: $icon-main;
+    margin: 0;
+    transform: scale(1.5);
+    margin-bottom: 5px;
+}
+
+.main{
+    border-bottom: 1px solid $color-letter-t;
+    background-color: $color-bckg;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__colcen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 10.94% 9.38% 10.94%; /*regla de 3*/
+    }
+
+    &__section--img{
+        width:250px;
+        margin-top: 29.69%;
+        padding-bottom: 2.213rem;
+    }
+
+    &__section--wrapper{
+        display: flex;
+        flex-direction: row;
+        border: 1.6px solid $icon-main-t;
+        border-radius: 3.5%;
+    }
+
+    &__section--paragraph{
+        font-size: $size-small;
+        color: $color-title;
+        font-family: $open;
+        line-height: normal;
+        text-align: center;
+        padding-bottom: 1.113rem;
+    }
+
+    &__section--title{
+        font-size: $size-big;
+        color: $icon-main;
+        font-family: $merriweather;
+        font-weight: 900;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__icon--paragraph{
+        color: $color-letter;
+        font-size: $size-small;
+        font-family: $open;
+        text-align: center;
+    }
+
+    &__link--div{
+        margin-top: 2.413rem;
+        margin-bottom: 9.38%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center
+    }
+
+    &__link--link{
+        text-decoration: none;
+        color: $color-text-button;
+        font-family: $open;
+        font-size: $size-button;
+        text-transform: uppercase;
+        padding: 8% 16%;
+        background-color: $color-button-index;
+        border-radius: 15%; /*la forma no queda exacta*/
+    }
+
+    &__icon{
+        margin: 0.938rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
