@@ -98,3 +98,18 @@
     text-align: center;
     align-items: center;
 }
+
+@media all and (min-width: 768px){
+    .main{
+        height: 85vh;
+
+        &__link--div{
+            transform: translateY(252%);
+        }
+
+        &__colcen{
+            margin: 30% 10.94% 25% 10.94%;  
+        }
+    }
+    
+}
