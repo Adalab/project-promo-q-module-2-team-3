@@ -1,4 +1,4 @@
-.fa-solid{
+.icon-index-main{
     color: $icon-main;
     margin: 0;
     transform: scale(1.5);
@@ -91,7 +91,8 @@
     }
 }
 
-.prueba{ width: 100%;
+.main__last{
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
