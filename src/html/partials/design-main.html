@@ -1,5 +1,5 @@
 <main>
-  <section>
+  <section class="delia">
     <article class="card">
       <div class="card__section">
         <div class="reset__container">
@@ -34,72 +34,75 @@
 
   <section class="form-section">
     <form class="form" action="#" method="post">
-      <div class="fill">
-        <fieldset class="fill__title">
-        <i class="fa-solid fa-object-ungroup design-icon"></i>
-         <span class="fill__title--text">Diseña</span><i class="fa-solid fa-angle-up"></i>
-        </fieldset>    
-      </div>
-    <fieldset class="designe-form">
-    <legend class="color">Colores</legend>
-    <div class="election">
-      <label class="options" for="colors1"
-        ><input
-          id="colors1"
-          type="radio"
-          value="colors"
-          name="colors"
-        />
-        <div class="first">
-          <div class="rectangle1-a"></div>
-          <div class="rectangle1-b"></div>
-          <div class="rectangle1-c"></div>
+      <fieldset>
+        <div class="fill">
+          <legend class="fill__title js__title">
+          <i class="fa-solid fa-object-ungroup design-icon"></i>
+           <span class="fill__title--text">Diseña</span><i class="fa-solid fa-angle-up js_arrow"></i>
+          </legend>
         </div>
-      
-      </label>
-      
-      <label class="options" for="colors2"
-        ><input
-          id="colors2"
-          type="radio"
-          value="colors"
-          name="colors"
-        />
-        <div class="second">
-          <div class="rectangle2-a"></div>
-          <div class="rectangle2-b"></div>
-          <div class="rectangle2-c"></div>
-        </div>
-      </label>
-      
-      <label class="options" for="colors3"
-        ><input
-          id="colors3"
-          type="radio"
-          value="colors"
-          name="colors" />
-        <div class="third">
-          <div class="rectangle3-a"></div>
-          <div class="rectangle3-b"></div>
-          <div class="rectangle3-c"></div>
-        </div>
-      </label>
-    </div>
-   </fieldset>
+            <section class="designe-form">
+            <legend class="color">Colores</legend>
+            <div class="election">
+        <label class="options" for="colors1"
+          ><input
+            id="colors1"
+            type="radio"
+            value="colors"
+            name="colors"
+          />
+          <div class="first">
+            <div class="rectangle1-a"></div>
+            <div class="rectangle1-b"></div>
+            <div class="rectangle1-c"></div>
+          </div>
+        
+        </label>
+        
+        <label class="options" for="colors2"
+          ><input
+            id="colors2"
+            type="radio"
+            value="colors"
+            name="colors"
+          />
+          <div class="second">
+            <div class="rectangle2-a"></div>
+            <div class="rectangle2-b"></div>
+            <div class="rectangle2-c"></div>
+          </div>
+        </label>
+        
+        <label class="options" for="colors3"
+          ><input
+            id="colors3"
+            type="radio"
+            value="colors"
+            name="colors" />
+          <div class="third">
+            <div class="rectangle3-a"></div>
+            <div class="rectangle3-b"></div>
+            <div class="rectangle3-c"></div>
+          </div>
+        </label>
+            </div>
+          </section>
+      </fieldset>
   
   
  
 
+   
+   <fieldset>
+    <section class="fill">
       
-
-      <div class="fill">
-        <fieldset class="fill__title">
-          <i class="keyboard fa-solid fa-keyboard"></i
-          ><span class="fill__title--text">Rellena</span
-          ><i class="fa-solid fa-angle-up"></i>
-        </fieldset>
-      </div>
-      <div class="fillform">
+          <legend class="fill__title js__title">
+            <i class="keyboard fa-solid fa-keyboard"></i
+            ><span class="fill__title--text">Rellena</span
+            ><i class="fa-solid fa-angle-up js_arrow"></i>
+          </legend>
+      </section>
+      <section class="fillform">
         <label class="fillform__label" for="name">Nombre Completo</label>
         <input
           class="fillform__input"
@@ -155,26 +158,32 @@
           placeholder="Ej: @sally-hill"
           type="text"
         />
-        <div class="share">
-          <fieldset class="share__title">
-            <i class="fa-solid fa-share-nodes share-icon"></i
-            ><span class="fill__title--text">Comparte</span
-            ><i class="share-arrow fa-solid fa-angle-up"></i>
-          </fieldset>
-          <div class="buttondiv">
-            <button class="buttondiv-share">
-              <i class="share-card fa-solid fa-address-card"></i> Crear tarjeta
-            </button>
+
+    </fieldset>
+      
+        <div>
+          <div class="share">
+            <legend class="share__title js__title">
+              <i class="fa-solid fa-share-nodes share-icon"></i
+              ><span class="fill__title--text">Comparte</span
+              ><i class="share-arrow fa-solid fa-angle-up js_arrow"></i>
+            </legend>
+            <div class="buttondiv">
+              <button class="buttondiv-share">
+                <i class="share-card fa-solid fa-address-card"></i> Crear tarjeta
+              </button>
+            </div>
+            <div class="buttontwitter">
+              <h6 class="buttontwitter-h6">La tarjeta ha sido creada:</h6>
+              <p class="buttontwitter-paragraph">https://awesome-profile-card.com?id=A456DF0001</p>
+              <button class="buttontwitter-button">
+                <i class="fa-brands fa-twitter share-in-twitter"></i>
+            Compartir en Twitter</button>
+            </div>
           </div>
-          <div class="buttontwitter">
-            <h6 class="buttontwitter-h6">La tarjeta ha sido creada:</h6>
-            <p class="buttontwitter-paragraph">https://awesome-profile-card.com?id=A456DF0001</p>
-            <button class="buttontwitter-button">
-              <i class="fa-brands fa-twitter share-in-twitter"></i>
-          Compartir en Twitter</button>
-          </div>
-        </div>
-      </div>
+        </div> 
+        </fieldset>
+      
     </form>
   </section>
 </main>
