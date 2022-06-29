@@ -108,9 +108,8 @@
 
 //form-section es la columna central
 .form-section{
+    box-sizing: content-box;
     width: 100%;
-    margin: 0px 20px;
-
 }
 
 .designe-form{
