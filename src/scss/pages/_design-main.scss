@@ -16,10 +16,10 @@
     justify-content: center;
 }
 .reset__container{
-    border: 1px solid white;
+    border: 1px solid $color-text-button;
     border-radius: 15px;
     width: 75px;
-    background-color: #bfcdd0;
+    background-color: $color-reset;
     text-decoration: none;
     margin-bottom: 20px;
     margin-top: 34px;
@@ -36,7 +36,7 @@
     font-size:12px;
     font-family: $open;
     text-transform: uppercase;
-    color: #54585a;
+    color: $color-letter;
 }
 
 .card__name{
@@ -59,7 +59,7 @@
    
 }
 .card__container{
-    background-color: white;
+    background-color: $color-text-button;
     width: 240px;
     height: 329px;
     border-bottom: 40px;
@@ -94,7 +94,7 @@
  
 }
 .rrss{
-    border: 2px solid #a2deaf; 
+    border: 2px solid $color-circle; 
     border-radius: 50%;
     width: 25px;
     height: 22px;
@@ -128,7 +128,7 @@
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 39px;
-    color: #54585A;
+    color: $color-letter;
     font-family: $open;
     margin-top:10px;
 }
@@ -147,17 +147,17 @@
 .rectangle1-a {
     width: 30px;
     height: 25px;
-    background-color: #114E4E;
+    background-color: $color-title;
 }
 .rectangle1-b {
     width: 30px;
     height: 25px;
-    background-color: #438792;
+    background-color: $color-button-index;
 }
 .rectangle1-c {
     width: 30px;
     height: 25px;
-    background-color: #A2DEAF;
+    background-color: $color-circle;
 }
 .rectangle2-a {
     width: 30px;
@@ -199,19 +199,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-bottom: 1px solid #d8d8d8;
-    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid $color-border;
+    border-top: 1px solid $color-border;
     margin-right: 20px;
     margin-left: 20px;
     font-family: $open ;
-    color:#54585a;
+    color: $color-letter;
 
 
     &__title{
         text-transform: uppercase;
         font-weight: 600;
         font-size: 18px;
-        color:#54585a;
+        color: $color-letter;
         margin-top: 10px;
         
         
@@ -236,13 +236,13 @@
     &__label{
         width:100%;
         margin-top: 10px;
-        color:#114e4e;
+        color: $color-title;
 
     }
 
     &__input{
         margin: 7px 0px 20px 0px;
-        border: 1px solid #a2deaf;
+        border: 1px solid $color-circle;
         height: 30px;
     }
 
@@ -252,8 +252,8 @@
         margin-top: 7px;
 
         &--button{
-            background-color: #e17334;
-            color: white;
+            background-color: $icon-main;
+            color: $color-text-button;
             text-align: center;
             padding: 7px 22px 7px 22px;
             border-radius: 3px;
@@ -263,7 +263,7 @@
         &--square{
            width: 30px;
            height: 30px;
-           border: 1px solid #a2deaf;
+           border: 1px solid $color-circle;
            
            
         }
@@ -276,7 +276,7 @@
     flex-direction: column;
     
     font-family: $open ;
-    color:#54585a;
+    color: $color-letter;
     
 
     &__title{
@@ -286,11 +286,11 @@
         text-transform: uppercase;
         font-weight: 600;
         font-size: 18px;
-        color:#54585a;
+        color: $color-letter;
         margin-left: 20px;
         margin-right: 20px;
-        border-top: 1px solid #d8d8d8;
-        border-bottom: 1px solid #d8d8d8;
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
         padding: 10px 0px 10px 0px;
 
         &--text{
@@ -309,8 +309,8 @@
 
 
     &-share{
-        color: white;
-        background-color: #e17334;
+        color: $color-text-button;
+        background-color: $icon-main;
         text-transform: uppercase;
         font-size: 18px;
         margin: 30px 0px 35px;
@@ -328,7 +328,7 @@
 
 
 .keyboard{
-    color: #e17334;
+    color: $icon-main;
     margin: 13px 10px 10px 0px;
 }
 
@@ -341,15 +341,15 @@
 .share-arrow{
     padding-top: 0px;
 }
-.design-icon {color: #e17334;
+.design-icon {color: $icon-main;
 margin: 13px 10px 10px 0px;}   
 
 .share-icon{
-   color:#e17334;
+   color: $icon-main;
    margin-right: 12px;
 }
 .share-card{
-    color: white;
+    color: $color-text-button;
 
 }
 .hidden{
@@ -371,7 +371,7 @@ margin: 13px 10px 10px 0px;}
 
     &-button{
         background-color: $color-button-twitter;
-        color: $color-twitter-text;
+        color: $color-text-button;
         border: none;
         border-radius: 5px;
         width: 11rem;
@@ -400,7 +400,7 @@ margin: 13px 10px 10px 0px;}
 }
 
 .share-in-twitter{
-    color: $color-twitter-text;
+    color: $color-text-button;
 }
 
 @media all and (min-width: 768px){
