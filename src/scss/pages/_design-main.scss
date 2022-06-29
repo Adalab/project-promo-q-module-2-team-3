@@ -410,11 +410,20 @@ margin: 13px 10px 10px 0px;}
         background-color: $color-bckg;
     }
 
-    .section-preview{
+    .section__preview{
         background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+        width: 40%;
+
+        margin:23px 40px 23px 0px;
+        border-radius: 6px;
+    }
+
+    .form-section{
+        width: 60%;
     }
 
     .card{
         height: 100vh;
+        background: none;
     }
 }
