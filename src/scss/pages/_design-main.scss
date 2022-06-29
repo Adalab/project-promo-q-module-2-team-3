@@ -402,3 +402,19 @@ margin: 13px 10px 10px 0px;}
 .share-in-twitter{
     color: $color-twitter-text;
 }
+
+@media all and (min-width: 768px){
+    .main__forflex{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: $color-bckg;
+    }
+
+    .section-preview{
+        background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+    }
+
+    .card{
+        height: 100vh;
+    }
+}
