@@ -38,10 +38,10 @@
         <div class="fill">
           <legend class="fill__title js__title">
           <i class="fa-solid fa-object-ungroup design-icon"></i>
-           <span class="fill__title--text">Diseña</span><i class="fa-solid fa-angle-up js_arrow"></i>
+           <span class="fill__title--text js__title_desing">Diseña</span><i class="fa-solid fa-angle-up js_arrow"></i>
           </legend>
         </div>
-            <section class="designe-form">
+            <section class="designe-form js__content_design">
             <legend class="color">Colores</legend>
             <div class="election">
         <label class="options" for="colors1"
@@ -94,70 +94,71 @@
 
    
    <fieldset>
-    <section class="fill">
+    <section class="fill line">
       
           <legend class="fill__title js__title">
             <i class="keyboard fa-solid fa-keyboard"></i
-            ><span class="fill__title--text">Rellena</span
+            ><span class="fill__title--text js__title_fill">Rellena</span
             ><i class="fa-solid fa-angle-up js_arrow"></i>
           </legend>
       </section>
       <section class="fillform">
-        <label class="fillform__label" for="name">Nombre Completo</label>
-        <input
-          class="fillform__input"
-          placeholder="Ej: Sally Jill"
-          id="name"
-          type="text"
-          name="name"
-        />
-        <label class="fillform__label" for="position">Puesto</label>
-        <input
-          class="fillform__input"
-          placeholder="Ej: Front-end unicorn"
-          id="position"
-          type="text"
-          name="position"
-        />
-        <label class="fillform__label" for="profile_image"
-          >Imagen de perfil</label
-        >
-        <div class="fillform__image">
-          <label class="fillform__image--button" for="image"
-            >Añadir imagen</label
+        <section class="js__content_fill">
+          <label class="fillform__label" for="name">Nombre Completo</label>
+          <input
+            class="fillform__input"
+            placeholder="Ej: Sally Jill"
+            id="name"
+            type="text"
+            name="name"
+          />
+          <label class="fillform__label" for="position">Puesto</label>
+          <input
+            class="fillform__input"
+            placeholder="Ej: Front-end unicorn"
+            id="position"
+            type="text"
+            name="position"
+          />
+          <label class="fillform__label" for="profile_image"
+            >Imagen de perfil</label
           >
-          <input class="hidden" type="file" name="image" id="image" />
-
-          <div class="fillform__image--square"></div>
-        </div>
-        <label class="fillform__label" for="email">Email</label>
-        <input
-          class="fillform__input"
-          placeholder="Ej: sally.hill@gmail.com"
-          type="email"
-          id="name"
-          name="name"
-        />
-        <label class="fillform__label" for="telephone">Teléfono</label>
-        <input
-          class="fillform__input"
-          placeholder="Ej: 555-55-55-55"
-          type="tel"
-          id="telephone"
-          name="telephone"
-        />
-        <label class="fillform__label" for="linkedin">LinkedIn</label>
-        <input
-          class="fillform__input"
-          placeholder="Ej: linkedin.com/in/sally.hill"
-          type="text"
-        />
-        <label class="fillform__label" for="github">Github</label>
-        <input
-          class="fillform__input"
-          placeholder="Ej: @sally-hill"
-          type="text"
-        />
+          <div class="fillform__image">
+            <label class="fillform__image--button" for="image"
+              >Añadir imagen</label
+            >
+            <input class="hidden" type="file" name="image" id="image" />
+            <div class="fillform__image--square"></div>
+          </div>
+          <label class="fillform__label" for="email">Email</label>
+          <input
+            class="fillform__input"
+            placeholder="Ej: sally.hill@gmail.com"
+            type="email"
+            id="name"
+            name="name"
+          />
+          <label class="fillform__label" for="telephone">Teléfono</label>
+          <input
+            class="fillform__input"
+            placeholder="Ej: 555-55-55-55"
+            type="tel"
+            id="telephone"
+            name="telephone"
+          />
+          <label class="fillform__label" for="linkedin">LinkedIn</label>
+          <input
+            class="fillform__input"
+            placeholder="Ej: linkedin.com/in/sally.hill"
+            type="text"
+          />
+          <label class="fillform__label" for="github">Github</label>
+          <input
+            class="fillform__input"
+            placeholder="Ej: @sally-hill"
+            type="text"
+          />
+        </section>
 
     </fieldset>
       
@@ -165,15 +166,15 @@
           <div class="share">
             <legend class="share__title js__title">
               <i class="fa-solid fa-share-nodes share-icon"></i
-              ><span class="fill__title--text">Comparte</span
+              ><span class="fill__title--text js__title_share">Comparte</span
               ><i class="share-arrow fa-solid fa-angle-up js_arrow"></i>
             </legend>
-            <div class="buttondiv">
+            <div class="buttondiv js__content_shareOne">
               <button class="buttondiv-share">
                 <i class="share-card fa-solid fa-address-card"></i> Crear tarjeta
               </button>
             </div>
-            <div class="buttontwitter">
+            <div class="buttontwitter js__content-shareTwo">
               <h6 class="buttontwitter-h6">La tarjeta ha sido creada:</h6>
               <p class="buttontwitter-paragraph">https://awesome-profile-card.com?id=A456DF0001</p>
               <button class="buttontwitter-button">
