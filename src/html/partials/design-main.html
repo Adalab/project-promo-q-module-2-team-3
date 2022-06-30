@@ -3,27 +3,27 @@
     <article class="card">
       <div class="card__section">
         <div class="reset__container">
-      <button class="reset__button"><i class="reset fa-solid fa-trash-can"></i>Reset</button>
+      <button class="reset__button js-btnPreview"><i class="reset fa-solid fa-trash-can"></i>Reset</button>
     </div>
       <div class="card__container">
         <div class="card__verticalBorder">
-        <h2 class="card__name">Nombre apellido</h2>
-        <p class="card__paragraph">Front-end developer</p>
+        <h2 class="card__name js-namePreview">Nombre apellido</h2>
+        <p class="card__paragraph js-positionPreview">Front-end developer</p>
       </div>
-        <div class="image"></div>
+        <div class="image js-imgPreview"></div>
         <nav>
           <ul class="list">
-            <li class="list__elements">
-              <i class="rrss fa-solid fa-mobile-screen-button"></i>
+            <li class="list__elements ">
+              <i class="rrss fa-solid fa-mobile-screen-button js-iconPreview"></i>
             </li>
             <li class="list__elements">
-              <i class="fa-solid fa-envelope rrss"></i>
+              <i class="fa-solid fa-envelope rrss js-iconPreview"></i>
             </li>
             <li class="list__elements">
-              <i class="rrss fa-brands fa-linkedin-in"></i>
+              <i class="rrss fa-brands fa-linkedin-in js-iconPreview"></i>
             </li>
             <li class="list__elements">
-              <i class="rrss fa-brands fa-github-alt"></i>
+              <i class="rrss fa-brands fa-github-alt js-iconPreview"></i>
             </li>
           </ul>
         </nav>
@@ -36,12 +36,12 @@
     <form class="form" action="#" method="post">
       <fieldset>
         <div class="fill">
-          <legend class="fill__title js__title">
+          <legend class="fill__title js__design">
           <i class="fa-solid fa-object-ungroup design-icon"></i>
-           <span class="fill__title--text js__title_desing">Diseña</span><i class="fa-solid fa-angle-up js_arrow"></i>
+           <span class="fill__title--text js__title_design">Diseña</span><i class="fa-solid fa-angle-up js_arrowDesign"></i>
           </legend>
         </div>
-            <section class="designe-form js__content_design">
+            <section class="design-form js-sectionDesign">
             <legend class="color">Colores</legend>
             <div class="election">
         <label class="options" for="colors1"
@@ -96,17 +96,17 @@
    <fieldset>
     <section class="fill line">
       
-          <legend class="fill__title js__title">
+          <legend class="fill__title js__fill">
             <i class="keyboard fa-solid fa-keyboard"></i
             ><span class="fill__title--text js__title_fill">Rellena</span
-            ><i class="fa-solid fa-angle-up js_arrow"></i>
+            ><i class="fa-solid fa-angle-up js_arrowFill"></i>
           </legend>
       </section>
       <section class="fillform">
         
           <label class="fillform__label" for="name">Nombre Completo</label>
           <input
-            class="fillform__input"
+            class="fillform__input js-inputName"
             placeholder="Ej: Sally Jill"
             id="name"
             type="text"
@@ -114,7 +114,7 @@
           />
           <label class="fillform__label" for="position">Puesto</label>
           <input
-            class="fillform__input"
+            class="fillform__input js-inputPosition"
             placeholder="Ej: Front-end unicorn"
             id="position"
             type="text"
@@ -124,7 +124,7 @@
             >Imagen de perfil</label
           >
           <div class="fillform__image">
-            <label class="fillform__image--button" for="image"
+            <label class="fillform__image--button js-addImage" for="image"
               >Añadir imagen</label
             >
             <input class="hidden" type="file" name="image" id="image" />
@@ -132,7 +132,7 @@
           </div>
           <label class="fillform__label" for="email">Email</label>
           <input
-            class="fillform__input"
+            class="fillform__input js-inputEmail"
             placeholder="Ej: sally.hill@gmail.com"
             type="email"
             id="name"
@@ -140,7 +140,7 @@
           />
           <label class="fillform__label" for="telephone">Teléfono</label>
           <input
-            class="fillform__input"
+            class="fillform__input js-inputPhone"
             placeholder="Ej: 555-55-55-55"
             type="tel"
             id="telephone"
@@ -148,13 +148,13 @@
           />
           <label class="fillform__label" for="linkedin">LinkedIn</label>
           <input
-            class="fillform__input"
+            class="fillform__input js-inputLinkedin"
             placeholder="Ej: linkedin.com/in/sally.hill"
             type="text"
           />
           <label class="fillform__label" for="github">Github</label>
           <input
-            class="fillform__input"
+            class="fillform__input js-inputGithub"
             placeholder="Ej: @sally-hill"
             type="text"
           />
@@ -164,13 +164,13 @@
       
         <fieldset>
           <div class="share">
-            <legend class="share__title js__title">
+            <legend class="share__title js__share">
               <i class="fa-solid fa-share-nodes share-icon"></i
               ><span class="fill__title--text js__title_share">Comparte</span
-              ><i class="share-arrow fa-solid fa-angle-up js_arrow"></i>
+              ><i class="share-arrow fa-solid fa-angle-up js_arrowShare"></i>
             </legend>
             <div class="buttondiv js__content_shareOne">
-              <button class="buttondiv-share">
+              <button class="buttondiv-share js-btnShare">
                 <i class="share-card fa-solid fa-address-card"></i> Crear tarjeta
               </button>
             </div>
