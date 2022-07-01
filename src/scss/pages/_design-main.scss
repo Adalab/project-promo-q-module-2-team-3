@@ -356,9 +356,7 @@ margin: 13px 10px 10px 0px;}
     color: $color-text-button;
 
 }
-.hidden{
-    display: none;
-}
+
 .line{
     border-top: 1px solid $color-border;
 }
@@ -437,4 +435,19 @@ margin: 13px 10px 10px 0px;}
         height: 100vh;
         background: none;
     }
+}
+
+.arrow-translate{
+    transform: rotate(180deg);
+    padding-bottom: 10px;
+} /*clase para que rote la flecha (toggle)*/
+
+
+.hidden{
+    display: none;
+}
+
+.btn-share-grey{
+    background-color: #d5d5d5;
+    color: $color-text-button;
 }
