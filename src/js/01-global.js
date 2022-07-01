@@ -21,9 +21,10 @@ const arrowDesign = document.querySelector ('.js_arrowDesign');
 const sectionFill = document.querySelector('.js-sectionFill');
 const titleFill = document.querySelector('.js__fill');
 const arrowFill = document.querySelector('.js_arrowFill');
+
 let inputName = document.querySelector('.js-inputName');
 let inputPosition = document.querySelector('.js-inputPosition');
-const addImage = document.querySelector('.js-inputPosition');
+let addImage = document.querySelector('.js-inputImage');
 let inputEmail = document.querySelector('.js-inputEmail');
 let inputPhone = document.querySelector('.js-inputPhone');
 let inputLinkedin = document.querySelector('.js-inputLinkedin');
