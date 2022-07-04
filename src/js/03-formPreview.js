@@ -11,7 +11,38 @@ const data = {
     photo: '',
 };
 
-function handleInput(){
+const linkPhone = document.querySelector('.js_link_phone');
+const linkEmail = document.querySelector('.js_link_email');
+const linkLinkedin= document.querySelector('.js_link_linkedin');
+const linkGithub = document.querySelector('.js_link_github');
+
+function previewCard() {
+    namePreview.innerHTML=data.name;
+    positionPreview.innerHTML = data.job;
+    linkPhone.href = data.phone;
+    linkLinkedin.href = data.linkedin;
+    linkGithub.href = data.github;
+
+};
+
+
+const handleInput = (event) => {
+    const nameInput = event.target.name;
+    const valueInput = event.target.value;
+
+    data[nameInput] = valueInput;
+    
+    previewCard();
+   
+
+};
+
+
+
+allInputs.addEventListener('keyup', handleInput);
+
+
+/*function handleInput(){
 namePreview.innerHTML=data.name;
 let valueName = inputName.value;
 data.name= valueName;
@@ -73,16 +104,10 @@ function handleInput(){
  data.name= valueName;
                         };
                         
- inputName.addEventListener('keyup', handleInput);
+ inputName.addEventListener('keyup', handleInput);*/
                                                                                     
 
 
 
 
 
-let valuePosition = inputPosition.value;
-//let valueImage = inputImage.value;
-let valuePhone = inputPhone.value;
-let valueEmail = inputEmail.value;
-let valueLinkedin = inputLinkedin.value;
-let valueGithub = inputGithub.value;

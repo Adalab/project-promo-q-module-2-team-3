@@ -1,5 +1,6 @@
 'use strict';
 
+
 const handleClick = (ev) => {
   const elementClick = ev.currentTarget;
   if (elementClick.classList.contains('js__design')){
@@ -28,11 +29,8 @@ else if (elementClick.classList.contains ('js__share')){ contentShareOne.classLi
 };
 
 titleDesign.addEventListener ('click',handleClick);
-<<<<<<< HEAD
-=======
 titleFill.addEventListener ('click',handleClick);
 titleShare.addEventListener ('click',handleClick);
->>>>>>> c1d2966adfb2cdcd2c60197e17f1680d35b0ae4f
 
 
 //lo de twitter y comparte

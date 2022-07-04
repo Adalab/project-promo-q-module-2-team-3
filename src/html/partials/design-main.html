@@ -14,16 +14,16 @@
         <nav>
           <ul class="list">
             <li class="list__elements ">
-              <i class="rrss fa-solid fa-mobile-screen-button js-iconPreview"></i>
+              <a href="" class="js_link_phone"><i class="rrss fa-solid fa-mobile-screen-button js-iconPreview"></i></a>
             </li>
             <li class="list__elements">
-              <i class="fa-solid fa-envelope rrss js-iconPreview"></i>
+              <a href="" class="js_link_email"><i class="fa-solid fa-envelope rrss js-iconPreview"></i></a>
             </li>
             <li class="list__elements">
-              <i class="rrss fa-brands fa-linkedin-in js-iconPreview"></i>
+              <a href="" class="js_link_linkedin"><i class="rrss fa-brands fa-linkedin-in js-iconPreview"></i></a>
             </li>
             <li class="list__elements">
-              <i class="rrss fa-brands fa-github-alt js-iconPreview"></i>
+              <a href="" class="js_link_github"><i class="rrss fa-brands fa-github-alt js-iconPreview"></i></a>
             </li>
           </ul>
         </nav>
@@ -33,7 +33,7 @@
   </section>
 
   <section class="form-section">
-    <form class="form" action="#" method="post">
+    <form class="form js_allInputs" action="#" method="post" >
       <fieldset>
         <div class="fill">
           <legend class="fill__title js__design">
@@ -112,22 +112,22 @@
             type="text"
             name="name"
           />
-          <label class="fillform__label" for="position">Puesto</label>
+          <label class="fillform__label" for="job">Puesto</label>
           <input
             class="fillform__input js-inputPosition"
             placeholder="Ej: Front-end unicorn"
-            id="position"
+            id="job"
             type="text"
-            name="position"
+            name="job"
           />
           <label class="fillform__label" for="profile_image"
             >Imagen de perfil</label
           >
           <div class="fillform__image">
-            <label class="fillform__image--button js-addImage" for="image"
+            <label class="fillform__image--button js-addImage" for="photo"
               >Añadir imagen</label
             >
-            <input class="hidden" type="file" name="image" id="image" />
+            <input class="hidden" type="file" name="photo" id="photo" />
             <div class="fillform__image--square"></div>
           </div>
           <label class="fillform__label" for="email">Email</label>
@@ -135,28 +135,30 @@
             class="fillform__input js-inputEmail"
             placeholder="Ej: sally.hill@gmail.com"
             type="email"
-            id="name"
-            name="name"
+            id="email"
+            name="email"
           />
-          <label class="fillform__label" for="telephone">Teléfono</label>
+          <label class="fillform__label" for="phone">Teléfono</label>
           <input
             class="fillform__input js-inputPhone"
             placeholder="Ej: 555-55-55-55"
             type="tel"
-            id="telephone"
-            name="telephone"
+            id="phone"
+            name="phone"
           />
           <label class="fillform__label" for="linkedin">LinkedIn</label>
           <input
             class="fillform__input js-inputLinkedin"
             placeholder="Ej: linkedin.com/in/sally.hill"
             type="text"
+            name = "linkedin"
           />
           <label class="fillform__label" for="github">Github</label>
           <input
             class="fillform__input js-inputGithub"
             placeholder="Ej: @sally-hill"
             type="text"
+            name="github"
           />
         </section>
 

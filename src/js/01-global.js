@@ -7,6 +7,8 @@ const namePreview = document.querySelector ('.js-namePreview');
 const positionPreview = document.querySelector ('.js-positionPreview');
 const imgPreview = document.querySelector ('.js-imgPreview');
 const iconPreview = document.querySelector ('.js-iconPreview');
+const allInputs = document.querySelector('.js_allInputs');
+
 
 //form
 //design
