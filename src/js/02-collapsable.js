@@ -16,7 +16,7 @@ const handleClick = (ev) => {
   else if (elementClick.classList.contains ('js__share')){
     contentShareOne.classList.toggle('hidden');}
 };
+
 titleDesign.addEventListener ('click',handleClick);
-console.log("hola");
 
 
