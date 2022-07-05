@@ -3,66 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Proyecto grupo modulo 2</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"/>
+   
   </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+  <body class="body-index">
+<main class="main">
+    <div class="main__colcen"> <!--columna central-->
+   <section class="main__section">
+       <img class="main__section--img" src="./assets/images/logo-awesome-profile-cards.png" alt="imagen logo" title="logo"/>
+    
+   </section>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+  <section  class="main__section">
+      <h1 class="main__section--title">Crea tu tarjeta de visita</h1>
+      <p class="main__section--paragraph">Crea mejores contactos profesionales de forma fácil y cómoda</p>
+  </section>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
+  <section class="main__section--wrapper">
+    <div class="main__icon"><i class="fa-solid fa-object-ungroup icon-index-main"></i>
+    <p class="main__icon--paragraph">Diseña</p>
     </div>
-    <script src="./assets/js/main.js"></script>
+
+    <div class="main__icon">
+    <i class="fa-solid fa-keyboard icon-index-main"></i>
+    <p class="main__icon--paragraph">Rellena</p>
+    </div>
+    
+    <div class="main__icon">
+        <i class="fa-solid fa-share-nodes icon-index-main"></i>
+    <p class="main__icon--paragraph">Comparte</p> 
+    </div>
+    </section>
+
+  <section class="main__section main__last">
+      <div class="main__link--div">
+          <a class="main__link--link" href="./design.html">Comenzar</a>
+      </div>
+  </section>
+</div>
+</main>
+<footer class="footer">
+  <p class="footer-title">Awesome profile-cards &copy2022</p>
+  <img
+    src="./assets/images/logo-adalab.png"
+    alt="logo Adalab"
+    title="logo Adalab"
+    class="adalab-img"
+  />
+</footer>
+
+
+
+
+    <script src="./assets/js/main.js"> </script>
   </body>
 </html>

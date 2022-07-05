@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <body>
+      <header>
+          <img class="header__img" src="./assets/images/logo-awesome-profile-cards.png" alt="imagen logo" title="logo"/>
+      </header>
+      <main class="main__forflex">
+        <section class="section__preview">
+          <article class="card">
+            <div class="card__section">
+              <div class="reset__container">
+            <button class="reset__button js-btnPreview"><i class="reset fa-solid fa-trash-can"></i>Reset</button>
+          </div>
+            <div class="card__container">
+              <div class="card__verticalBorder">
+              <h2 class="card__name js-namePreview">Nombre apellido</h2>
+              <p class="card__paragraph js-positionPreview">Front-end developer</p>
+            </div>
+              <div class="image js-imgPreview"></div>
+              <nav>
+                <ul class="list">
+                  <li class="list__elements ">
+                    <a href="" class="js_link_phone"><i class="rrss fa-solid fa-mobile-screen-button js-iconPreview"></i></a>
+                  </li>
+                  <li class="list__elements">
+                    <a href="" class="js_link_email"><i class="fa-solid fa-envelope rrss js-iconPreview"></i></a>
+                  </li>
+                  <li class="list__elements">
+                    <a href="" class="js_link_linkedin"><i class="rrss fa-brands fa-linkedin-in js-iconPreview"></i></a>
+                  </li>
+                  <li class="list__elements">
+                    <a href="" class="js_link_github"><i class="rrss fa-brands fa-github-alt js-iconPreview"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </article>
+        </div>
+        </section>
+
+        <section class="form-section">
+          <form class="form js_allInputs" action="#" method="post" >
+            <fieldset>
+              <div class="fill">
+                <legend class="fill__title js__design">
+                <i class="fa-solid fa-object-ungroup design-icon"></i>
+                 <span class="fill__title--text js__title_design">Diseña</span><i class="fa-solid fa-angle-up js_arrowDesign"></i>
+                </legend>
+              </div>
+                  <section class="design-form js-sectionDesign">
+                  <legend class="color">Colores</legend>
+                  <div class="election">
+              <label class="options" for="colors1"
+                ><input
+                  id="colors1"
+                  type="radio"
+                  value="colors"
+                  name="colors"
+                />
+                <div class="first">
+                  <div class="rectangle1-a"></div>
+                  <div class="rectangle1-b"></div>
+                  <div class="rectangle1-c"></div>
+                </div>
+              
+              </label>
+              
+              <label class="options" for="colors2"
+                ><input
+                  id="colors2"
+                  type="radio"
+                  value="colors"
+                  name="colors"
+                />
+                <div class="second">
+                  <div class="rectangle2-a"></div>
+                  <div class="rectangle2-b"></div>
+                  <div class="rectangle2-c"></div>
+                </div>
+              </label>
+              
+              <label class="options" for="colors3"
+                ><input
+                  id="colors3"
+                  type="radio"
+                  value="colors"
+                  name="colors" />
+                <div class="third">
+                  <div class="rectangle3-a"></div>
+                  <div class="rectangle3-b"></div>
+                  <div class="rectangle3-c"></div>
+                </div>
+              </label>
+                  </div>
+                </section>
+            </fieldset>
+        
+        
+       
+
+         
+         <fieldset>
+          <section class="fill line">
+            
+                <legend class="fill__title js__fill">
+                  <i class="keyboard fa-solid fa-keyboard"></i
+                  ><span class="fill__title--text js__title_fill">Rellena</span
+                  ><i class="fa-solid fa-angle-up js_arrowFill"></i>
+                </legend>
+            </section>
+            <section class="fillform js-sectionFill hidden">
+              
+                <label class="fillform__label" for="name">Nombre Completo</label>
+                <input
+                  class="fillform__input js-inputName"
+                  placeholder="Ej: Sally Jill"
+                  id="name"
+                  type="text"
+                  name="name"
+                />
+                <label class="fillform__label" for="job">Puesto</label>
+                <input
+                  class="fillform__input js-inputPosition"
+                  placeholder="Ej: Front-end unicorn"
+                  id="job"
+                  type="text"
+                  name="job"
+                />
+                <label class="fillform__label" for="profile_image"
+                  >Imagen de perfil</label
+                >
+                <div class="fillform__image">
+                  <label class="fillform__image--button js-addImage" for="photo"
+                    >Añadir imagen</label
+                  >
+                  <input class="hidden" type="file" name="photo" id="photo" />
+                  <div class="fillform__image--square"></div>
+                </div>
+                <label class="fillform__label" for="email">Email</label>
+                <input
+                  class="fillform__input js-inputEmail"
+                  placeholder="Ej: sally.hill@gmail.com"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+                <label class="fillform__label" for="phone">Teléfono</label>
+                <input
+                  class="fillform__input js-inputPhone"
+                  placeholder="Ej: 555-55-55-55"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                />
+                <label class="fillform__label" for="linkedin">LinkedIn</label>
+                <input
+                  class="fillform__input js-inputLinkedin"
+                  placeholder="Ej: linkedin.com/in/sally.hill"
+                  type="text"
+                  name = "linkedin"
+                />
+                <label class="fillform__label" for="github">Github</label>
+                <input
+                  class="fillform__input js-inputGithub"
+                  placeholder="Ej: @sally-hill"
+                  type="text"
+                  name="github"
+                />
+              </section>
+
+          </fieldset>
+            
+              <fieldset>
+                <div class="share">
+                  <legend class="share__title js__share">
+                    <i class="fa-solid fa-share-nodes share-icon"></i
+                    ><span class="fill__title--text js__title_share">Comparte</span
+                    ><i class="share-arrow fa-solid fa-angle-up js_arrowShare"></i>
+                  </legend>
+                  <div class="buttondiv js__content_shareOne hidden">
+                    <button class="buttondiv-share js-btnShare">
+                      <i class="share-card fa-solid fa-address-card"></i> Crear tarjeta
+                    </button>
+                  </div>
+                  <div class="buttontwitter js__content-shareTwo hidden">
+                    <h6 class="buttontwitter-h6">La tarjeta ha sido creada:</h6>
+                    <p class="buttontwitter-paragraph">https://awesome-profile-card.com?id=A456DF0001</p>
+                    <button class="buttontwitter-button">
+                      <i class="fa-brands fa-twitter share-in-twitter"></i>
+                  Compartir en Twitter</button>
+                  </div>
+                </div>
+              </div> 
+              </fieldset>
+            
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer-title">Awesome profile-cards &copy2022</p>
+        <img
+          src="./assets/images/logo-adalab.png"
+          alt="logo Adalab"
+          title="logo Adalab"
+          class="adalab-img"
+        />
+      </footer>
+
+      <script src="./assets/js/main.js"></script>
+    </body>
+  </head>
+</html>
