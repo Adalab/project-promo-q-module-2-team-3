@@ -16,6 +16,7 @@ const linkEmail = document.querySelector('.js_link_email');
 const linkLinkedin= document.querySelector('.js_link_linkedin');
 const linkGithub = document.querySelector('.js_link_github');
 
+
 function previewCard() {
     
     if (data.name === '') { namePreview.innerHTML='Nombre Apellido'}

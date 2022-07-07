@@ -39,3 +39,6 @@ const titleShare = document.querySelector ('.js__share');
 const arrowShare = document.querySelector('.js_arrowShare');
 const btnShare = document.querySelector('.js-btnShare');
 const contentShareTwo = document.querySelector('.js__content-shareTwo');
+const palette1 = document.querySelector('.js-palette1');
+const palette2 = document.querySelector('.js-palette2');
+const palette3 = document.querySelector('.js-palette3');
