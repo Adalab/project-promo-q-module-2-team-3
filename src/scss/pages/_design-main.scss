@@ -72,6 +72,7 @@
 }
 .image{
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTil9_c3PpcUTAx2vmHH6srdREmI1X8474m3Q&usqp=CAU");
+    background-size: cover;
     width: 240px;
     height: 200px;  
    
@@ -250,6 +251,8 @@
         display: flex;
         gap: 20px;
         margin-top: 7px;
+       
+        
 
         &--button{
             background-color: $icon-main;
@@ -264,7 +267,7 @@
            width: 30px;
            height: 30px;
            border: 1px solid $color-circle;
-           
+           background-size: cover;
            
         }
     }

@@ -18,10 +18,13 @@ const linkGithub = document.querySelector('.js_link_github');
 
 function previewCard() {
     
-    if (data.name === '') { namePreview.innerHTML='Nombre de usuario'}
+    if (data.name === '') { namePreview.innerHTML='Nombre Apellido'}
     else {namePreview.innerHTML=data.name};
 
     positionPreview.innerHTML = data.job;
+    if (data.job === '') { positionPreview.innerHTML='Front-end developer'}
+    else {positionPreview.innerHTML=data.job};
+
     linkPhone.href = data.phone;
     linkLinkedin.href = `https://www.${data.linkedin}`;
     linkGithub.href = `https://github.com/${data.github.slice(1)}`;
