@@ -17,97 +17,36 @@ const linkLinkedin= document.querySelector('.js_link_linkedin');
 const linkGithub = document.querySelector('.js_link_github');
 
 function previewCard() {
-    namePreview.innerHTML=data.name;
+    
+    if (data.name === '') { namePreview.innerHTML='Nombre de usuario'}
+    else {namePreview.innerHTML=data.name};
+
     positionPreview.innerHTML = data.job;
     linkPhone.href = data.phone;
-    linkLinkedin.href = data.linkedin;
-    linkGithub.href = data.github;
+    linkLinkedin.href = `https://www.${data.linkedin}`;
+    linkGithub.href = `https://github.com/${data.github.slice(1)}`;
+   
 
 };
 
 
 const handleInput = (event) => {
     const nameInput = event.target.name;
+   
+
+    
     const valueInput = event.target.value;
 
     data[nameInput] = valueInput;
     
     previewCard();
-   
+}
 
-};
+
 
 
 
 allInputs.addEventListener('keyup', handleInput);
-
-
-/*function handleInput(){
-namePreview.innerHTML=data.name;
-let valueName = inputName.value;
-data.name= valueName;
-};
-
-inputName.addEventListener('keyup', handleInput);
-
-function handleInput(){
-    namePreview.innerHTML=data.name;
-    let valueName = inputName.value;
-    data.name= valueName;
-    };
-    
-    inputName.addEventListener('keyup', handleInput);
-
-
-
-function handleInput(){
-    positionPreview.innerHTML=data.job;
-    let valuePosition = inputPosition.value;
-    data.job= valuePosition;
-        };
-        
-    inputPosition.addEventListener('keyup', handleInput);
-        
-        
-function handleInput(){
-    namePreview.innerHTML=data.name;
-    let valueName = inputName.value;
-    data.name= valueName;
-    };
-            
-    inputName.addEventListener('keyup', handleInput);
-            
-            
-            
-function handleInput(){
-    namePreview.innerHTML=data.name;
-     let valueName = inputName.value;
-    data.name= valueName;
-                };
-                
-     inputName.addEventListener('keyup', handleInput);
-
-
-function handleInput(){
-    namePreview.innerHTML=data.name;
-    let valueName = inputName.value;
-     data.name= valueName;
-                    };
-                    
-    inputName.addEventListener('keyup', handleInput);
-                    
-    
-    
-function handleInput(){
-    namePreview.innerHTML=data.name;
-    let valueName = inputName.value;
- data.name= valueName;
-                        };
-                        
- inputName.addEventListener('keyup', handleInput);*/
-                                                                                    
-
-
 
 
 
