@@ -50,7 +50,19 @@ const handleInput = (event) => {
 
 
 
+
 allInputs.addEventListener('keyup', handleInput);
+
+//Palettes
+
+function handlePalette (event) {
+    const palette1 = palette1.target
+if(event.target === palette1)
+
+}
+
+
+palette.addEventListener('click', handlePalette);
 
 
 
