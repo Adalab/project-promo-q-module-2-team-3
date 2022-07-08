@@ -60,18 +60,28 @@ allInputs.addEventListener('keyup', handleInput);
     ['#420101', '#BD1010', '#E95626'],
     ['#3E5B65', '#EAB052', '#A0C0CF'],
 ];*/
-
+const palettePpal = palette.target;
 function handlePalette (event) {
-    const palette1 = palette1.target;
+    
+    if(event.target === palette2){
+        cardContainer.classList.add('palette2');
+        cardContainer.classList.remove('palette1');
+        cardContainer.classList.remove('palette3');}
     if(event.target === palette1){
-        iconPreview.classList.add(p1_adalab-dark);
-        //add 3 y remove 6 para 3 paletas :(
+        cardContainer.classList.add('palette1');
+        cardContainer.classList.remove('palette2');
+        cardContainer.classList.remove('palette3');}
+  if(event.target === palette3){
+        cardContainer.classList.add('palette3');
+        cardContainer.classList.remove('palette2');
+        cardContainer.classList.remove('palette1');}
     };
 
-}
 
 
-palette.addEventListener('click', handlePalette);
+palette1.addEventListener('click', handlePalette);
+palette2.addEventListener('click', handlePalette);
+palette3.addEventListener('click', handlePalette);
 
 
 
