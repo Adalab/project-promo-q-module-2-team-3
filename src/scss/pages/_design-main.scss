@@ -39,7 +39,7 @@
     color: $color-letter;
 }
 
-.card__name{
+.card__container--name{
     font-size: 18px;
     font-family: $montserrat;
     color:$color-title;
@@ -50,7 +50,7 @@
       
    
 }
-.card__paragraph{
+.card__container--paragraph{
     font-size: 16px;
     font-family: $montserrat-bold;
     color:$color-letter;
@@ -66,11 +66,11 @@
 }
 
 
-.card__verticalBorder{
+.card__container--verticalBorder{
     border-left: 5px solid $color-button-index;
 
 }
-.image{
+.card__container--image{
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTil9_c3PpcUTAx2vmHH6srdREmI1X8474m3Q&usqp=CAU");
     background-size: cover;
     width: 240px;
@@ -78,7 +78,7 @@
    
 }
 
-.list{
+.card__container--list{
     display: flex;
     gap:20px;
     padding-left: 20px;
@@ -94,7 +94,7 @@
 
  
 }
-.rrss{
+.card__rrss{
     border: 2px solid $color-circle; 
     border-radius: 50%;
     width: 25px;
@@ -190,33 +190,9 @@
     height: 25px;
     background-color: #A0C0CF;
 }
-.p1_adalab{
-    color: $color-title;
-}
-.p1_adalab-dark{
-    color: $color-button-index;
-}
-.p1_green{
-    color: $color-circle;
-}
-.p2_dark{
-    color: #420101;
-}
-.p2_medium{
-    color: #BD1010;
-}
-.p2_light{
-    color: #E95626;
-}
-.p3_grey{
-    color: #3E5B65;
-}
-.p3_yellow{
-    color: #EAB052;
-}
-.p3_blue{
-    color: #A0C0CF;  
-}
+
+
+
 //formulario
 
 
@@ -479,4 +455,43 @@ margin: 13px 10px 10px 0px;}
 .btn-share-grey{
     background-color: #d5d5d5;
     color: $color-text-button;
+}
+
+.card__container.palette1 {
+    .card__container--name {
+        color: $color-title;
+    }
+    .card__container--verticalBorder {
+        border-color: $color-button-index;
+    }
+    .card__rrss {
+        color: $color-title;
+        border-color: $color-circle;
+    }
+}
+
+.card__container.palette2 {
+    .card__container--name {
+        color: #420101;
+    }
+    .card__container--verticalBorder {
+        border-color: #BD1010;
+    }
+    .card__rrss {
+        color:#420101;
+        border-color: #E95626;
+    }
+}
+
+.card__container.palette3 {
+    .card__container--name {
+        color: #3E5B65;
+    }
+    .card__container--verticalBorder {
+        border-color: #EAB052;
+    }
+    .card__rrss {
+        color:#3E5B65;
+        border-color: #A0C0CF;
+    }
 }

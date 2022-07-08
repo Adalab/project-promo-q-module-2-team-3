@@ -16,7 +16,7 @@ const linkEmail = document.querySelector('.js_link_email');
 const linkLinkedin= document.querySelector('.js_link_linkedin');
 const linkGithub = document.querySelector('.js_link_github');
 
-
+//esta es la de arreglar las url
 function previewCard() {
     
     if (data.name === '') { namePreview.innerHTML='Nombre Apellido'}
@@ -55,9 +55,18 @@ allInputs.addEventListener('keyup', handleInput);
 
 //Palettes
 
+/*const paletteArray = [
+    ['#114e4e', '#438792', '#a2deaf'],
+    ['#420101', '#BD1010', '#E95626'],
+    ['#3E5B65', '#EAB052', '#A0C0CF'],
+];*/
+
 function handlePalette (event) {
-    const palette1 = palette1.target
-if(event.target === palette1)
+    const palette1 = palette1.target;
+    if(event.target === palette1){
+        iconPreview.classList.add(p1_adalab-dark);
+        //add 3 y remove 6 para 3 paletas :(
+    };
 
 }
 
