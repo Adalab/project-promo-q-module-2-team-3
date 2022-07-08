@@ -42,7 +42,7 @@
 .card__container--name{
     font-size: 18px;
     font-family: $montserrat;
-    color:$color-title;
+    //color:$color-title;
     font-weight: bold;
     padding-left: 20px;
     margin-top: 21px;
@@ -53,7 +53,7 @@
 .card__container--paragraph{
     font-size: 16px;
     font-family: $montserrat-bold;
-    color:$color-letter;
+    //color:$color-letter;
     padding-left: 20px;
     margin-bottom: 10px;
    
@@ -67,7 +67,7 @@
 
 
 .card__container--verticalBorder{
-    border-left: 5px solid $color-button-index;
+    border-left: 5px solid ;//$color-button-index;
 
 }
 .card__container--image{
@@ -95,7 +95,7 @@
  
 }
 .card__rrss{
-    border: 2px solid $color-circle; 
+    border: 2px solid; //$color-circle; 
     border-radius: 50%;
     width: 25px;
     height: 22px;
