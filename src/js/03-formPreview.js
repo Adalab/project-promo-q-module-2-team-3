@@ -17,7 +17,7 @@ const linkLinkedin= document.querySelector('.js_link_linkedin');
 const linkGithub = document.querySelector('.js_link_github');
 
 //esta es la de arreglar las url
-function previewCard() {
+function previewCard(data) {
     
     if (data.name === '') { namePreview.innerHTML='Nombre Apellido'}
     else {namePreview.innerHTML=data.name};
@@ -43,7 +43,7 @@ const handleInput = (event) => {
 
     data[nameInput] = valueInput;
     
-    previewCard();
+    previewCard(data);
 }
 
 
@@ -85,3 +85,44 @@ palette3.addEventListener('click', handlePalette);
 
 
 
+// boton de reset
+
+const clearPreview= ()=>{
+
+    data.palette= 1;
+   data.name= '';
+   data.job= '';
+   data.phone= '';
+   data.email= '';
+   data.linkedin= '';
+   data.github= '';
+   data.photo= '';
+
+   cardContainer.classList.add('palette1');
+   cardContainer.classList.remove('palette2');
+   cardContainer.classList.remove('palette3');
+   
+};
+
+const clearInput = () => {
+    inputName.value = "";
+ inputPosition.value = "";
+ inputEmail.value = "";
+ inputPhone.value = "";
+ inputLinkedin.value = "";
+ inputGithub.value = "";
+ profileImage.style.backgroundImage = `url()`;
+ profilePreview.style.backgroundImage = `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTil9_c3PpcUTAx2vmHH6srdREmI1X8474m3Q&usqp=CAU")`;
+
+
+};
+
+
+const handleReset = (event)=>{
+    event.preventDefault();
+    clearPreview();
+    clearInput();
+     previewCard(data);
+};
+
+btnPreview.addEventListener('click', handleReset);
