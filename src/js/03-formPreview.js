@@ -60,7 +60,7 @@ allInputs.addEventListener('keyup', handleInput);
     ['#420101', '#BD1010', '#E95626'],
     ['#3E5B65', '#EAB052', '#A0C0CF'],
 ];*/
-const palettePpal = palette.target;
+/*const palettePpal = palette.target;
 function handlePalette (event) {
     
     if(event.target === palette2){
@@ -81,7 +81,30 @@ function handlePalette (event) {
 
 palette1.addEventListener('click', handlePalette);
 palette2.addEventListener('click', handlePalette);
-palette3.addEventListener('click', handlePalette);
+palette3.addEventListener('click', handlePalette);*/
+
+
+const paintPalette = (palette) =>{
+    cardContainer.classList.remove('palette1', 'palette2', 'palette3');
+    cardContainer.classList.add(`palette${palette}`);
+};
+
+
+
+
+const handleRadio = (ev) => {
+    const palette = parseInt(ev.currentTarget.value); 
+    data.palette = palette;
+    paintPalette(palette);
+};
+
+
+
+
+for( const oneRadio of allRadio){
+    oneRadio.addEventListener('click', handleRadio);
+};
+
 
 
 

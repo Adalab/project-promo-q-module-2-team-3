@@ -42,5 +42,5 @@ const contentShareTwo = document.querySelector('.js__content-shareTwo');
 const palette1 = document.querySelector('.js-palette1');
 const palette2 = document.querySelector('.js-palette2');
 const palette3 = document.querySelector('.js-palette3');
-const palette = document.querySelector('.js-palette');
+const allRadio = document.querySelectorAll('.js-palette');
 const cardContainer = document.querySelector('.js-card__container');
