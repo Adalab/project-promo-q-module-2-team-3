@@ -382,6 +382,8 @@ margin: 13px 10px 10px 0px;}
     
 
     &-button{
+        text-decoration: none;
+        text-align: center;
         background-color: $color-button-twitter;
         color: $color-text-button;
         border: none;
@@ -391,6 +393,7 @@ margin: 13px 10px 10px 0px;}
         padding-bottom: 2%;
         font-family: $open;
         font-size: $size-med;
+
     }
 
     &-h6{
