@@ -28,6 +28,7 @@ function previewCard(data) {
 
     linkPhone.href = data.phone;
     linkLinkedin.href = `https://www.${data.linkedin}`;
+    
     linkGithub.href = `https://github.com/${data.github.slice(1)}`;
    
 

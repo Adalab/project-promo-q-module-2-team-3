@@ -33,12 +33,3 @@ titleFill.addEventListener ('click',handleClick);
 titleShare.addEventListener ('click',handleClick);
 
 
-//lo de twitter y comparte
-
-const handleClickBtn = (ev) => {
- ev.preventDefault();
- contentShareTwo.classList.remove('hidden')
- btnShare.classList.add('btn-share-grey');
-};
-
-btnShare.addEventListener ('click',handleClickBtn);
