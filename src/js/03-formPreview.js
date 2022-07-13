@@ -36,6 +36,10 @@ function previewCard(data) {
   linkGithub.href = `https://github.com/${data.github.slice(1)}`;
 }
 
+const saveData = () => {
+    localStorage.setItem ("localData", JSON.stringify(data))
+};
+
 const handleInput = (event) => {
   const nameInput = event.target.name;
   const valueInput = event.target.value;
@@ -43,6 +47,7 @@ const handleInput = (event) => {
   data[nameInput] = valueInput;
 
   previewCard(data);
+  saveData();
 };
 
 allInputs.addEventListener("keyup", handleInput);
@@ -100,5 +105,14 @@ const handleReset = (event) => {
 btnPreview.addEventListener("click", handleReset);
 
 console.log(data);
+
+//const loadData=() => {
+const loadData = localStorage.getItem ('localData');
+if(loadData===null){  
+} else{
+const loadDataParse = JSON.parse(loadData);
+previewCard(loadDataParse);
+
+}
 
 //Publicar en twitter
