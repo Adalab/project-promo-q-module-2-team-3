@@ -29,7 +29,11 @@ console.log(serverResp);
 })
 };
 
+//funcion para localStorage: cuando vaya a compartir guardamos los datos
 
+/*const saveData = (data) => {
+    localStorage.setItem ("localData", JSON.stringify(data))
+};*/
 
 
 
@@ -38,6 +42,7 @@ const handleClickBtn = (ev) => {
     contentShareTwo.classList.remove('hidden')
     btnShare.classList.add('btn-share-grey');
     shareCard();
+   // saveData(data);
    };
    
 
