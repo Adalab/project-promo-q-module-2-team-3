@@ -1,7 +1,7 @@
 "use strict";
 
 const data = {
-  palette: 1 /*revisar*/,
+  palette: 1,
   name: "",
   job: "",
   phone: "",
@@ -115,20 +115,24 @@ btnPreview.addEventListener("click", handleReset);
 console.log(data);
 
 const loadData=() => {
- let data = JSON.parse(localStorage.getItem('localData'));
+let data = JSON.parse(localStorage.getItem('localData'));
 if(data){
   console.log(data);
-    inputName.value = data.name;
-    inputPosition.value = data.job;
-    inputEmail.value = data.email;
-    inputLinkedin.value = data.linkedin;
-    inputGithub.value = data.github;
-    inputPhone.value = data.phone;
-    console.log(data);
-    paintPalette(data.palette);
-    saveData(data);
-    previewCard(data);
-}
+  inputName.value = `${data.name}`;
+  inputPosition.value = `${data.job}`;
+  inputEmail.value = `${data.email}`;
+  inputPhone.value = `${data.phone}`;
+  inputLinkedin.value = `${data.linkedin}`;
+  inputGithub.value = `${data.github}`;
+  //profileImage.style.backgroundImage = `url(${data.photo})`;
+  //profilePreview.style.backgroundImage = `url(${data.photo})`;
+  const palette = parseInt(data.palette);
+  paintPalette(palette);
+  console.log(data);
+  paintPalette(data.palette);
+  saveData(data);
+  previewCard(data);
+  }
 };
 
 loadData();
