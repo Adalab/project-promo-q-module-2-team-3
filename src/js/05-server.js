@@ -27,7 +27,7 @@ function shareCard () {
     }else{
         messageCard.innerHTML = '';
         messageCard.innerHTML = 'Debe rellenar todos los campos';
-
+        //función que resetee el botón
     }
 
 })
@@ -48,10 +48,6 @@ const handleClickBtn = (ev) => {
     contentShareTwo.classList.remove('hidden')
     btnShare.classList.add('btn-share-grey');
     shareCard();
-    
    };
-   
-
-
 
    btnShare.addEventListener ('click',handleClickBtn);

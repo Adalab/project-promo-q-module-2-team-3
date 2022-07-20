@@ -16,6 +16,10 @@ const linkEmail = document.querySelector(".js_link_email");
 const linkLinkedin = document.querySelector(".js_link_linkedin");
 const linkGithub = document.querySelector(".js_link_github");
 
+const saveData = (data) => {
+  localStorage.setItem ("localData", JSON.stringify(data))
+};
+
 //esta es la de arreglar las url
 function previewCard(data) {
   if (data.name === "") {
@@ -34,20 +38,19 @@ function previewCard(data) {
   linkPhone.href = data.phone;
   linkLinkedin.href = `https://www.${data.linkedin}`;
   linkGithub.href = `https://github.com/${data.github.slice(1)}`;
+
+  saveData(data);
 }
 
-const saveData = () => {
-    localStorage.setItem ("localData", JSON.stringify(data))
-};
 
-const handleInput = (event) => {
-  const nameInput = event.target.name;
-  const valueInput = event.target.value;
+const handleInput = (ev) => {
+  const nameInput = ev.target.name;
+  const valueInput = ev.target.value;
 
   data[nameInput] = valueInput;
 
   previewCard(data);
-  saveData();
+  saveData(data);
 };
 
 allInputs.addEventListener("keyup", handleInput);
@@ -112,20 +115,19 @@ btnPreview.addEventListener("click", handleReset);
 console.log(data);
 
 const loadData=() => {
- let oldData = JSON.parse(localStorage.getItem('localData'));
-if(oldData){
-  console.log(oldData);
-    inputName.value = oldData.name;
-    inputPosition.value = oldData.job;
-    /*addImage.style.background = `url(${oldData.photo})`;
-    addImage.style.backgroundSize = 'cover';
-    addImage.style.backgroundPosition = 'center';*/
-    inputEmail.value = oldData.email;
-    inputLinkedin.value = oldData.linkedin;
-    inputGithub.value = oldData.github;
-    inputPhone.value = oldData.phone;
-    previewCard(oldData);
-    //defaultCheckedPalette(oldData);
+ let data = JSON.parse(localStorage.getItem('localData'));
+if(data){
+  console.log(data);
+    inputName.value = data.name;
+    inputPosition.value = data.job;
+    inputEmail.value = data.email;
+    inputLinkedin.value = data.linkedin;
+    inputGithub.value = data.github;
+    inputPhone.value = data.phone;
+    console.log(data);
+    paintPalette(data.palette);
+    saveData(data);
+    previewCard(data);
 }
 };
 
