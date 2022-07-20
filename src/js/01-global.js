@@ -46,3 +46,4 @@ const allRadio = document.querySelectorAll('.js-palette');
 const cardContainer = document.querySelector('.js-card__container');
 const sectionUrl = document.querySelector('.js-section-url');
 const messageCard = document.querySelector('.js-messageCard');
+const linkTwitter = document.querySelector('.js-twitter-link');

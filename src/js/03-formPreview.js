@@ -106,13 +106,24 @@ btnPreview.addEventListener("click", handleReset);
 
 console.log(data);
 
-//const loadData=() => {
-const loadData = localStorage.getItem ('localData');
-if(loadData===null){  
-} else{
-const loadDataParse = JSON.parse(loadData);
-previewCard(loadDataParse);
-
+const loadData=() => {
+ let oldData = JSON.parse(localStorage.getItem('localData'));
+if(oldData){
+  console.log(oldData);
+    inputName.value = oldData.name;
+    inputPosition.value = oldData.job;
+    /*addImage.style.background = `url(${oldData.photo})`;
+    addImage.style.backgroundSize = 'cover';
+    addImage.style.backgroundPosition = 'center';*/
+    inputEmail.value = oldData.email;
+    inputLinkedin.value = oldData.linkedin;
+    inputGithub.value = oldData.github;
+    inputPhone.value = oldData.phone;
+    previewCard(oldData);
+    //defaultCheckedPalette(oldData);
 }
+};
 
-//Publicar en twitter
+loadData();
+
+

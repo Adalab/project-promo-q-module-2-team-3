@@ -1,7 +1,6 @@
 'use strict';
 
-//lo de twitter y comparte
-
+//lo de comparte
 
 function shareCard () {
     data.github = data.github.slice(1);
@@ -19,15 +18,24 @@ function shareCard () {
     .then((serverResp)=> {if (serverResp.success){
         sectionUrl.innerHTML = serverResp.cardURL;
         sectionUrl.href = serverResp.cardURL;
+        console.log(serverResp);
+        linkTwitter.href=`https://twitter.com/intent/tweet?
+        text=Mi%20tarjeta%20de%20contacto&
+        url=${serverResp.cardURL}`;
+        localStorage.setItem("cardStoraged", JSON.stringify(serverResp.cardURL));
 
     }else{
         messageCard.innerHTML = '';
         messageCard.innerHTML = 'Debe rellenar todos los campos';
 
     }
-console.log(serverResp);
+
 })
 };
+
+//twitter
+
+
 
 //funcion para localStorage: cuando vaya a compartir guardamos los datos
 
