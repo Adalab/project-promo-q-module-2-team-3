@@ -95,11 +95,16 @@ const clearInput = () => {
   profilePreview.style.backgroundImage = `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTil9_c3PpcUTAx2vmHH6srdREmI1X8474m3Q&usqp=CAU")`;
 };
 
+const clearStorage = () => {
+ localStorage.clear();
+}
+
 const handleReset = (event) => {
   event.preventDefault();
   clearPreview();
   clearInput();
   previewCard(data);
+  clearStorage()
 };
 
 btnPreview.addEventListener("click", handleReset);
