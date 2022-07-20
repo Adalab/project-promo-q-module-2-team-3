@@ -19,9 +19,7 @@ function shareCard () {
         sectionUrl.innerHTML = serverResp.cardURL;
         sectionUrl.href = serverResp.cardURL;
         console.log(serverResp);
-        linkTwitter.href=`https://twitter.com/intent/tweet?
-        text=Mi%20tarjeta%20de%20contacto&
-        url=${serverResp.cardURL}`;
+        linkTwitter.href=`https://twitter.com/intent/tweet?text=%C2%A1I%20have%20done%20my%20contact%20card!%20Puedes%20verla%20aqu%C3%AD%3A&url=${sectionUrl.href}`;
         localStorage.setItem("cardStoraged", JSON.stringify(serverResp.cardURL));
 
     }else{
