@@ -28,16 +28,18 @@ function previewCard(data) {
     namePreview.innerHTML = data.name;
   }
 
-  positionPreview.innerHTML = data.job;
+
   if (data.job === "") {
     positionPreview.innerHTML = "Front-end developer";
   } else {
     positionPreview.innerHTML = data.job;
   }
 
-  linkPhone.href = data.phone;
+  linkPhone.href =`tel:${data.phone}`;
   linkLinkedin.href = `https://www.${data.linkedin}`;
   linkGithub.href = `https://github.com/${data.github.slice(1)}`;
+  linkEmail.href = `mailto:${data.email}`;
+  
 
   saveData(data);
 }
@@ -59,17 +61,21 @@ allInputs.addEventListener("keyup", handleInput);
 const paintPalette = (palette) => {
   cardContainer.classList.remove("palette1", "palette2", "palette3");
   cardContainer.classList.add(`palette${palette}`);
+  const paletteElement = document.querySelector(`.js-palette${palette}`);
+  paletteElement.checked = true;
+  
+
 };
+
 
 const handleRadio = (ev) => {
   const palette = parseInt(ev.currentTarget.value);
   data.palette = palette;
   paintPalette(palette);
 };
-
 for (const oneRadio of allRadio) {
   oneRadio.addEventListener("click", handleRadio);
-}
+};
 
 // boton de reset
 
@@ -125,6 +131,14 @@ const loadData=() => {
     data.phone = localData.phone;
     data.linkedin = localData.linkedin;
     data.github = localData.github;
+    data.palette = localData.palette;
+    data.photo = localData.photo;
+    
+    paintPalette(localData.palette);
+    
+   
+     
+  previewCard(data);
 
   inputName.value = localData.name;
   inputPosition.value = localData.job;
@@ -132,19 +146,16 @@ const loadData=() => {
   inputPhone.value = localData.phone;
   inputLinkedin.value = localData.linkedin;
   inputGithub.value = localData.github;
-  imgPreview.style.background = localStorage.photo;
-  divImage.style.background = localStorage.photo;
+  imgPreview.style.backgroundImage = `url('${localData.photo}')`;
+  divImage.style.backgroundImage = `url('${localData.photo}')`;
 
 
-
+//poner como en la linea 100
 
   
-  let palette = parseInt(localData.palette);
-  paintPalette(palette);
-  console.log(data);
-  paintPalette(localData.palette);
-  saveData(data);
-  previewCard(data);
+ 
+
+ 
   }
 };
 
