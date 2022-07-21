@@ -5,7 +5,7 @@
 const btnPreview = document.querySelector('.js-btnPreview');
 const namePreview = document.querySelector ('.js-namePreview');
 const positionPreview = document.querySelector ('.js-positionPreview');
-const imgPreview = document.querySelector ('.js-imgPreview');
+let imgPreview = document.querySelector ('.js-imgPreview');
 const iconPreview = document.querySelector ('.js-iconPreview');
 const allInputs = document.querySelector('.js_allInputs');
 
@@ -31,6 +31,7 @@ let inputEmail = document.querySelector('.js-inputEmail');
 let inputPhone = document.querySelector('.js-inputPhone');
 let inputLinkedin = document.querySelector('.js-inputLinkedin');
 let inputGithub = document.querySelector('.js-inputGithub');
+let divImage = document.querySelector('.js__profile-image');
 
 //share
 

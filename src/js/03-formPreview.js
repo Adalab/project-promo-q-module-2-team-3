@@ -16,10 +16,10 @@ const linkEmail = document.querySelector(".js_link_email");
 const linkLinkedin = document.querySelector(".js_link_linkedin");
 const linkGithub = document.querySelector(".js_link_github");
 
-const saveData = (data) => {
-  localStorage.setItem ("localData", JSON.stringify(data))
-};
 
+const saveData = (data) => {
+  localStorage.setItem ('localData', JSON.stringify(data));
+};
 //esta es la de arreglar las url
 function previewCard(data) {
   if (data.name === "") {
@@ -48,9 +48,10 @@ const handleInput = (ev) => {
   const valueInput = ev.target.value;
 
   data[nameInput] = valueInput;
-
+  
   previewCard(data);
   saveData(data);
+  
 };
 
 allInputs.addEventListener("keyup", handleInput);
@@ -115,21 +116,33 @@ btnPreview.addEventListener("click", handleReset);
 console.log(data);
 
 const loadData=() => {
-let data = JSON.parse(localStorage.getItem('localData'));
-if(data){
-  console.log(data);
-  inputName.value = `${data.name}`;
-  inputPosition.value = `${data.job}`;
-  inputEmail.value = `${data.email}`;
-  inputPhone.value = `${data.phone}`;
-  inputLinkedin.value = `${data.linkedin}`;
-  inputGithub.value = `${data.github}`;
-  //profileImage.style.backgroundImage = `url(${data.photo})`;
-  //profilePreview.style.backgroundImage = `url(${data.photo})`;
-  const palette = parseInt(data.palette);
+  let localData = JSON.parse(localStorage.getItem('localData'));
+  if(localData){
+    console.log(localData);
+    data.name = localData.name;
+    data.job = localData.job;
+    data.email = localData.email;
+    data.phone = localData.phone;
+    data.linkedin = localData.linkedin;
+    data.github = localData.github;
+
+  inputName.value = localData.name;
+  inputPosition.value = localData.job;
+  inputEmail.value = localData.email;
+  inputPhone.value = localData.phone;
+  inputLinkedin.value = localData.linkedin;
+  inputGithub.value = localData.github;
+  imgPreview.style.background = localStorage.photo;
+  divImage.style.background = localStorage.photo;
+
+
+
+
+  
+  let palette = parseInt(localData.palette);
   paintPalette(palette);
   console.log(data);
-  paintPalette(data.palette);
+  paintPalette(localData.palette);
   saveData(data);
   previewCard(data);
   }
